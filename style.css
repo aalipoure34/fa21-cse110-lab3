@@ -57,6 +57,10 @@ a:active {
 .toc {
     font-family: 'Exo';
     position: relative;
+    left:10px;
+    top:5px;
+    bottom:10x;
+    right:1px;
 
 }
 
