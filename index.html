@@ -2,6 +2,8 @@
 <html lang=en>
     <head>
         <meta charset="UTF-8">
+        <link rel="stylesheet" href="./style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rubik">
         <meta name="author" content="Eamon Aalipour">
         <meta name="keywords" content="DreamTeam, dream team, dream, team, meeting">
         <meta name="description" content="Dream Team Meeting 2 Notes">
@@ -11,7 +13,7 @@
 
     <body>
         <header>
-            <h1><i>Dream Team</i> Second Meeting Minutes</h1>
+            <h1 id = 'main-title'><i>Dream Team</i> Second Meeting Minutes</h1>
             <hr>
             <h2>Meeting to Discuss What App We Will Build</h2>
             <h3>October 1st, 2021</h3>
@@ -27,8 +29,8 @@
             </details>
 
             <nav>
-                <h2>Table of Contents</h2>
-                <a href="#meeting-whiteboard">Meeting Whiteboard</a><br>
+                <h2 class = "toc">Table of Contents</h2>
+                <a href="#meeting-whiteboard" >Meeting Whiteboard</a><br>
                 <a href="#attendance">Attendance</a><br>
                 <a href="#agenda">Agenda</a><br>
                 <a href="#unfinished-business">Unfinished Work</a><br>
@@ -36,16 +38,14 @@
                 <a href="#questions-and-comments">Questions and Comments</a><br>
                 <a href="#video">Inspiration for App Choice</a><br>
                 <a href="#extras-for-team">Team Form</a><br>
-                <a href="#extras-for-visitors">Extras For Visitors</a>
-
-
+                <a href="#extras-for-visitors">Extras For Visitors</a><br>
                 <br>
                 <br>
 
                 <div class="this-is-a-div"></div>
                 
                 <section id="meeting-whiteboard">
-                    <h2>Brainstorming Whiteboard</h2>
+                    <h2 class="main-section">Brainstorming Whiteboard</h2>
                     <img src="files/WhiteBoard.jpg" alt="meeting-whiteboard" width="650" height="700">
                 </section>
 
@@ -56,7 +56,7 @@
             </nav>
 
             <section id="attendance">
-                <h2>Attendees</h2>
+                <h2 class="main-section">Attendees</h2>
                 <ul>
                     <li><b>Eamon Aalipour</b> (Team Lead)</li>
                     <li>Bugs Bunny</li>                    
@@ -67,7 +67,7 @@
             </section>
 
             <section id="agenda">
-                <h2>Agenda for Meeting</h2>
+                <h2 class="main-section">Agenda for Meeting</h2>
                 <ol type = "1">
                     <li>Finalize Team Name</li>
                     <li>Brainstorm Ideas for App (Sport-Based)</li>                    
@@ -76,7 +76,7 @@
             </section>
 
             <section id="unfinished-business">
-                <h2>Things We Still Need To Discuss</h2>
+                <h2 class="main-section">Things We Still Need To Discuss</h2>
                 <ol type="1">
                     <li>When to Meet Consistently</li>
                     <li>Where to Meet Consistently</li>                    
@@ -85,15 +85,15 @@
             </section>
 
             <section id="new-topics">
-                <h2>New Topics That Were Brought Up</h2>
+                <h2 class="main-section">New Topics That Were Brought Up</h2>
                 <ol type="1">
                     <li>Which Language Should Be Used</li>
                     <li>What System to Follow (Kanban? Scrum?)</li>                    
                 </ol>          
             </section>
 
-            <section id="questions-and-comments">
-                <h2>Questions, Comments, Concerns Raised During Meeting</h2>
+            <section id="questions-and-comments" class="comments">
+                <h2 class="qanda"> Questions, Comments, Concerns Raised During Meeting</h2>
                 <ul>
                     <li><em>What does the ELO Ranking really mean? - Bugs</em></li>
                     <li><em>Who should be our target audience? - Daffy</em></li>   
@@ -103,21 +103,21 @@
             </section>
 
             <section id="video">
-                <h2>Inspiration for the App</h2>
+                <h2 class="main-section">Inspiration for the App</h2>
 
                 <p>The original suggestion to do a table tennis based app came from our team member Eamon. He is an avid table tennis
                     player himself and has been playing for years. Here is a clip of him playing (video and audio).
                 </p>
 
-                <h3>Video Footage</h3>
+                <h3 class="main-section">Video Footage</h3>
 
-                <video controls width="600">
+                <video controls class="video">
                     
                     <source src="files/Table_Tennis.mp4" type="video/mp4">
                     
                 </video>
 
-                <h3>Audio Only (Music of Table Tennis)</h3>
+                <h3 class="main-section">Audio Only (Music of Table Tennis)</h3>
 
                 <audio controls>
 
@@ -131,7 +131,7 @@
 
 
             <section id="extras-for-team">
-                <h2>Team, This Section is a Form to Get Your Opinion on Next Steps</h2> 
+                <h2 class="main-section">Team, This Section is a Form to Get Your Opinion on Next Steps</h2> 
                 <label for="improve">Please Tell Us What to Improve on for Next Meeting:</label><br>
                 <br>
                 <textarea id="improve" name="improve" rows="10" cols="40"></textarea><br>
@@ -149,7 +149,7 @@
                 </select>
                 <br>
                 <form>
-                    <h3>When Should We Meet Each Week?</h3>
+                    <h3 class="main-section">When Should We Meet Each Week?</h3>
                     <input type="checkbox" id="monday" name="dates">
                     <label for="monday">Monday</label><br>
                     <input type="checkbox" id="tuesday" name="dates">
@@ -162,14 +162,15 @@
                     <label for="friday">Friday</label><br>
                 </form>  
                 <br>
-                <button type="submit">Submit. :)</button>
+                <button type="submit" class="buttons">Submit. :)</button>
+                <p class="buttons">Thanks for your time!</p>
             </section>
 
             <section id="extras-for-visitors">
-                <h2>Welcome to a Surprise For You Visitors!</h2>
+                <h2 class="main-section">Welcome to a Surprise For You Visitors!</h2>
                 <p>Here's a fun form you can fill out for visiting our website.</p>
                 <form>
-                    <fieldset>
+                    <fieldset class="myform">
 
                         <legend>Tell Us Your Favorite Sport!</legend>
                         <input type="radio" id="basketball">
@@ -190,7 +191,7 @@
                 
                 <br>
                 
-                <h3>Hm...which team member is best?</h3>
+                <h3 class="main-section">Hm...which team member is best?</h3>
                 
                 <label for="best-team-member">Pick The Best Team Member:</label>
                 <input list="members-list" id="best-team-member" name="best-team-member"/>                
@@ -205,12 +206,40 @@
             <br>
             <br>
 
-            <button type="submit">Submit. :)</button>
+            <button type="submit" class="buttons">Submit. :)</button>
+            <p class="buttons">Thanks for your time!</p>
 
             <br>
             <br>
 
             </section>
+
+            
+            <h2 class="main-section">Before Leaving...Always Remember Our Team Values</h2>
+                
+            <div class="mybox">
+                <div class="trust">Trust</div>                
+                <div class="empathy">Empathy</div>
+                <div class="respect">Respect</div>
+                <div class="honesty">Honesty</div>
+            </div>
+            
+            <p class="hidden">Hello to anyone reading this code. It won't appear on the page.</p>
+
+            <br>
+
+            <h2 class="main-section">Signing Off...</h2>
+
+
+            <div class="mygrid">
+                <div class="eamon">Eamon Aalipour</div>                
+                <div class="bugs">Bugs Bunny</div>
+                <div class="daffy">Daffy Duck</div>
+                <div class="tom">Tom Cat</div>
+                <div class="jerry">Jerry Mouse</div>
+            </div>
+
+           
             
         </main>
 

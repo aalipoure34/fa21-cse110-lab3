@@ -1,0 +1,234 @@
+/*
+    This document was written by Eamon Aalipour for Lab 3 in CSE 110.
+*/
+@import url(https://fonts.googleapis.com/css?family=Rubik);
+@import url(https://fonts.googleapis.com/css?family=Exo);
+
+html {
+    padding-top: 5px;
+    padding-bottom: 15px;
+    padding-left:20px;
+    padding-right:20px;
+
+}
+
+header {
+    background-color: #F0F8FF;
+    text-align: center;
+    font-family: 'Rubik';
+    margin:auto;
+}
+
+#main-title {
+    text-decoration: underline;
+}
+
+.comments {
+    border-style: solid;
+    border-color: rgb(0,255,255);
+    border-width: 0.75em;
+    border-radius: 25px;
+    margin-top: 1in;
+    margin-bottom: 6pc;
+    margin-left: 6pc;
+    margin-right: 6pc;
+
+}
+
+button:hover {
+    color: hsl(240, 100%, 50%)
+
+}
+
+.main-section {
+    font-family: 'Exo';
+    position: static;
+    display:block;
+}
+
+* {
+    font-family: sans-serif;
+}
+
+a:active {
+    color: coral;
+}
+
+.toc {
+    font-family: 'Exo';
+    position: relative;
+
+}
+
+.qanda {
+    font-family: 'Exo';
+    text-align : center;
+}
+
+.buttons {
+    display:inline;
+}
+
+.hidden {
+    display:none;
+}
+
+/*
+Standard width of a phone according to Google
+*/
+
+@media (min-width: 480px) {
+    .video {
+        height:20ch;
+        width:30%;
+        max-width:40%;
+        min-width:45%;
+
+    }
+}
+
+.video {
+    height:50ch;
+    width:100%;
+    max-width:100%;
+    min-width:50%;
+}
+
+a[href="https://github.com/CSE110-SP21/Lab2"] {
+    color:red;
+
+}
+
+h1, h2 {
+    color:blue;
+}
+
+.myform {
+    margin: 20px 10px 10px 20px;
+}
+
+footer {
+    padding: 50px 1px 1px 10px;
+}
+
+.mybox {
+    display: flex;
+    align-items:center;
+    flex-flow: column;
+    flex-wrap:wrap;
+}
+
+.trust {
+    display:flex;
+    border: 2mm ridge rgb(255, 0, 0);
+    font-size: Large;
+}
+
+.empathy {
+    display:flex;
+    border: 2mm ridge rgb(255, 165, 0);
+    font-size: Large;
+}
+
+.respect {
+    display:flex;
+    border: 2mm ridge rgb(42, 187, 155);
+    font-size: Large;
+}
+
+.honesty {
+    display:flex;
+    border: 2mm ridge rgb(255, 0, 255);
+    font-size: Large;
+}
+
+.mygrid {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: auto;
+
+}
+
+.eamon {      
+    display:grid;
+    border: 2mm ridge rgb(255, 0, 0);
+    grid-column-start:1;
+    grid-column-end:2;
+    grid-row-start:1;
+    grid-row-end:2;
+
+}
+
+.daffy {      
+    display:grid;
+    border: 2mm ridge rgb(255, 165, 0);
+    grid-column-start:2;
+    grid-column-end:3;
+    grid-row-start:2;
+    grid-row-end:3;
+
+
+}
+
+.bugs {      
+    display:grid;
+    border: 2mm ridge rgb(42, 187, 155);
+    grid-column-start:3;
+    grid-column-end:4;
+    grid-row-start:3;
+    grid-row-end:4;   
+
+}
+
+.tom {      
+    display:grid;
+    border: 2mm ridge rgb(255, 0, 255);
+    grid-column-start:4;
+    grid-column-end:5;
+    grid-row-start:4;
+    grid-row-end:5;   
+
+}
+
+.jerry {      
+    display:grid;
+    border: 2mm ridge rgb(0, 0, 0);
+    grid-column-start:5;
+    grid-column-end:6;
+    grid-row-start:5;
+    grid-row-end:6;   
+
+}
+
+/*
+
+A bunch of very silly ways to center text
+
+*/
+
+.mygrid .bugs {
+    text-align: center;
+}
+
+.mygrid > .eamon {
+    text-align: center;
+}
+
+.tom ~ .jerry {
+    text-align: center;
+}
+
+.bugs + .daffy {
+    text-align: center;
+}
+
+div.tom {
+    text-align: center;
+}
+
+
+
+
+
+
